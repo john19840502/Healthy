@@ -1,0 +1,38 @@
+<ion-view view-title="Deals" cache-view="false" class="Deal">
+<ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+</ion-nav-buttons>
+  <ion-content>
+<div class="col col-60 col-offset-20 col-center">
+  <div class="button-bar padding">
+  <button class="button button-small btnactive" id="btncoupan" ng-click="coupon()" style="font-size: 13px;">Coupons</button>
+  <button class="button button-small btnNormal"  id="btnloyalty" ng-click="loyalty()" style="font-size: 13px;">Loyalty</button>
+  </div>
+  </div>
+<div class="list" ng-hide="coupanlist">
+
+<a class="item item-avatar" href="#" ng-click="discount()" ng-repeat="coupan in coupansdata">
+     <img ng-src="{{coupan.imgsrc}}">
+	<ul>
+	<li>{{coupan.title}} <p> {{coupan.title2}}</p></li>
+	<li class=" item-icon-right"><span>{{coupan.distance}}</span><i class="icon ion-ios-arrow-right"></i></li>
+	</ul>
+  </a>
+</div>
+
+<div class="list loyalty" ng-show="coupanlist">
+<a class="item item-avatar" href="#" ng-repeat="loyalty in loyaltydata" ng-click="discount2()">
+     <img ng-src="{{loyalty.imgsrc}}">
+	<ul>
+	<li>{{loyalty.title}} <p> {{loyalty.title2}}</p>
+	<p class="ratingicon">
+		<span class="ratingspan" ng-repeat="star in stars track by $index">
+		<i class="icon {{star}}"></i></span>
+	</p>
+	</li>
+	<li class="item-icon-right"><span>{{loyalty.distance}}</span><i class="icon ion-ios-arrow-right"></i></li>
+	</ul>
+  </a>
+</div>
+  </ion-content>
+</ion-view>

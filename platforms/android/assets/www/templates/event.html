@@ -1,0 +1,128 @@
+<ion-view view-title="Events" cache-view="false">
+<ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+</ion-nav-buttons>
+<style>
+.button.button-icon.icon.ion-navicon{
+color:#FFF !important;
+}
+.spantitle{
+padding:5px !important;
+font-size:13px !important;
+}
+.item
+{	
+padding-top:6px !important;
+padding-bottom:6px !important;
+}
+.item-avatar{
+min-height:60px !important;
+padding-left:55px !important;
+}
+ul li
+{
+padding: 1px !important;
+display:inline-block !important;
+overflow:hidden;
+text-overflow:ellipsis;
+font-size:13px !important;
+}
+
+ul li .icon
+{
+right:11px !important;
+}
+ul li span {
+    color: #cdcdd2;
+    font-size: 13px;
+    position: absolute;
+    right: 38px;
+    top: 33px;
+}
+
+.btnactive
+{
+	background-color: #5A2B83 !important;
+	color:white !important;
+}
+
+.btnNormal
+{	
+	background-color: white !important;
+	color:#5A2B83 !important;
+}
+
+.button-bar
+{
+	border:1px solid #5A2B83 !important;
+	padding:0px;
+	border-radius:5px;
+}
+
+ul > :first-child 
+{
+	width:80% !important;
+}
+ul li p, ul li b {
+font-size:13px !important;
+color: black !important;
+}
+
+.loyalty span
+{
+	top:34px !important;
+}
+.pmonth
+{
+position: absolute;
+top: 12px;
+left: 18px;
+font-size: 11px !important;
+color: white !important;
+font-weight: 900; 
+}
+
+.pdate
+{
+	position: absolute;
+left: 20px;
+top: 32px;
+font-weight: 700;
+color: black !important;
+}
+img{
+border-radius: 0 !important;
+left:8px !important;
+}
+.item-divider {
+    color: #6d6d71 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    min-height: 45px !important;
+    padding-top: 17px !important;
+}
+
+</style>
+  <ion-content>
+<div ng-repeat = "item in eventdata">
+<div class="list">
+<div class="item item-divider">
+{{item.Monthhead}}
+  </div>
+<a class="item item-avatar" href="#" ng-click="discount3()">
+     <img src="img/NewCal.png">
+	 <p class="pmonth">{{item.month}}</p>
+	 <p class="pdate">{{item.date}}</p>
+	<ul>
+	<li>
+	<b>{{item.title}}</b> 
+	<p> {{item.address}}</p>
+	<p>{{item.time}}</p>
+	</li>
+	<li class=" item-icon-right"><span>{{item.distance}}</span><i class="icon ion-ios-arrow-right"></i></li>
+	</ul>
+  </a>
+  </div>
+</div>
+  </ion-content>
+</ion-view>

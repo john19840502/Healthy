@@ -1,0 +1,74 @@
+<ion-side-menus enable-menu-with-back-views="false" >
+<style>
+.bar{
+padding :0px !important;
+}
+.button.button-icon.icon.ion-navicon{
+color:#FFF !important;
+}
+.icon.ion-ios-arrow-forward
+{
+font-size:20px !important;
+}
+.tabs{
+color:#5A2B83 !important;
+position:relative !important;
+border:none !important;
+}
+.bar-footer {
+    border-top: 1px solid #979797 !important;
+}
+.tab-item {
+    font-size: 13px !important;
+}
+</style>
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable" align-title="center">
+      <!-- <ion-nav-back-button>
+      </ion-nav-back-button> -->
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"> 
+	</ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="left">
+    <ion-content>
+      <ion-list>
+	  <ion-item class="item-icon-right" menu-close ng-click="about()">
+          About
+		  <i class="icon ion-ios-arrow-right"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" menu-close ng-click="login()">
+          Login
+		   <i class="icon ion-ios-arrow-right"></i>
+        </ion-item>
+		 <ion-item class="item-icon-right" menu-close ng-click="suggest()">
+          Suggest a Listing
+		   <i class="icon ion-ios-arrow-right"></i>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
+
+<ion-footer-bar>
+		<ion-tabs class="tabs tabs-icon-top">
+		  <ion-tab title="Explore" icon-off="exploreIcon" icon-on="exploreIcon_fill" href="#/app/explore"  ng-click="checkTab()">
+			<ion-nav-view name="explore" cache-view="false" ></ion-nav-view>
+		  </ion-tab>
+			<ion-tab title="Favorites" icon-off="favorites" icon-on="favorites_fill" href="#/app/favourite">
+			<ion-nav-view name="favorite" cache-view="false"></ion-nav-view>
+		  </ion-tab>
+		  <ion-tab title="Deals" icon-on="deals_fill" icon-off="deals" href="#/app/deals">
+			<ion-nav-view name="deal" cache-view="false"></ion-nav-view>
+		  </ion-tab>
+		  <ion-tab title="Events" icon-on="events_fill" icon-off="events" href="#/app/events">
+			<ion-nav-view name="event" cache-view="false"></ion-nav-view>
+		  </ion-tab>
+		</ion-tabs>
+	</ion-footer-bar>
+

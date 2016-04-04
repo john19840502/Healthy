@@ -1,0 +1,45 @@
+.Deal {
+  ul li span {
+    position: absolute;
+    right: 38px;
+    top: 25px;
+    font-size: 12px;
+    color: #6F6F6F;
+  }
+
+  ul >:first-child {
+    width: 80% !important;
+  }
+
+  .topgraphics img {
+    width: 100%;
+  }
+
+  ul li p {
+    font-size: 16px !important;
+    color: #444444 !important;
+  }
+
+  .item-avatar img {
+    border-radius: 0px !important;
+    max-height: 50px !important;
+    max-width: 50px !important;
+  }
+
+  .loyalty span {
+    top: 37px !important;
+  }
+
+  .ratingicon i {
+    color: #9B9A9B;
+  }
+
+  .ratingspan {
+    position: inherit;
+  }
+
+  .icon.ion-ios-arrow-right {
+    color: #000 !important;
+  }
+
+}

@@ -1,0 +1,36 @@
+<ion-view name="favourite" view-title="Favourites" cache-view="false" class="Favourite">
+<ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+      </ion-nav-buttons>
+  <ion-content>
+<div class="col col-60 col-offset-20 col-center">
+  <div class="button-bar padding">
+  <button class="button button-small btnactive" id="btndistance" ng-click="distance()" style="font-size: 13px;">Distance</button>
+  <button class="button button-small btnNormal"  id="btnatoz" ng-click="atoz()" style="font-size: 13px;">A-Z</button>
+  </div>
+  </div>
+<div class="list" ng-hide="distancelist">
+<div ng-repeat="distances in distancedata">
+<a class="item item-avatar item-icon-left item-icon-right" ng-click="resturantDescription()">
+     <img ng-src="{{distances.imgsrc}}">
+	<ul>
+	<li>{{distances.title}}</li>
+	<li class=""><span>{{distances.distance}}</span><i class="icon ion-ios-arrow-right"></i></li>
+	</ul>
+  </a>
+</div>
+</div>
+
+<div class="list" ng-show="distancelist">
+<div ng-repeat="atozs in atozdata">
+<a class="item item-avatar item-icon-left item-icon-right" href="#" ng-click="location()">
+     <img ng-src="{{atozs.imgsrc}}">
+	<ul>
+	<li>{{atozs.title}}</li>
+	<li class=""><span>{{atozs.distance}}</span><i class="icon ion-ios-arrow-right"></i></li>
+	</ul>
+  </a>
+  </div>
+</div>
+  </ion-content>
+</ion-view>

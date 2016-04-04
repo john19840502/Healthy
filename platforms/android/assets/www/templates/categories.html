@@ -1,0 +1,28 @@
+<ion-view view-title="Categories" cache-view="false">
+<style>
+.item {
+    padding: 0px !important;
+}
+.radio-content i{
+font-weight:normal !important;
+font-size:15px !important;
+color:#007AFF !important;
+}
+</style>
+<ion-nav-bar class="bar-stable nav-title-slide-ios7">
+ <ion-nav-back-button ng-init="init()">
+      </ion-nav-back-button>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear button-royal">
+            SAVE
+        </button>
+    </ion-nav-buttons>
+</ion-nav-bar>
+  <ion-content>
+    <ion-list>
+	 <ion-item ng-repeat="chat in categories">
+		  <ion-radio ng-model="choice" ng-value="'{{chat.id}}'">{{chat.name}}</ion-radio>
+	</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

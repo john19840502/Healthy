@@ -1,0 +1,47 @@
+.Event .item-avatar {
+  min-height: 60px !important;
+  padding-left: 55px !important; }
+
+.Event ul li {
+  padding: 1px !important;
+  display: inline-block !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px !important; }
+
+.Event ul > :first-child {
+  width: 80% !important; }
+
+.Event ul li p,
+.Event ul li b {
+  font-size: 13px !important;
+  color: black !important; }
+
+.Event .loyalty span {
+  top: 34px !important; }
+
+.Event .pmonth {
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  font-size: 11px !important;
+  color: white !important;
+  font-weight: 900; }
+
+.Event .pdate {
+  position: absolute;
+  left: 20px;
+  top: 32px;
+  font-weight: 700;
+  color: black !important; }
+
+.Event img {
+  border-radius: 0 !important;
+  left: 8px !important; }
+
+.Event .item-divider {
+  color: #6d6d71 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  min-height: 45px !important;
+  padding-top: 17px !important; }

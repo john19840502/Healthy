@@ -1,0 +1,21 @@
+.Home .popup {
+  width: 275px !important; }
+
+.Home .button-custom {
+  font-weight: 600; }
+
+.Home .logo {
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 148px;
+  margin: 20% auto 15%;
+  position: relative;
+  width: 196px; }
+
+.Home .button-container .button {
+  margin: 20px auto !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: 60% !important; }

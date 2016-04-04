@@ -1,0 +1,50 @@
+.Location-detail #ulreviews li p {
+  margin: 0px !important;
+  padding-left: 60px !important;
+  color: #000; }
+
+.Location-detail .reviewtitle {
+  color: #444444 !important; }
+
+.Location-detail .popup {
+  max-height: 100% !important;
+  width: 300px !important; }
+
+.Location-detail .popup-body {
+  text-align: right !important; }
+
+.Location-detail .popup-body > span {
+  color: #5a2b83;
+  font-size: 15px; }
+
+.Location-detail textarea[type="text"] {
+  resize: none; }
+
+.Location-detail .button-save {
+  padding: 0 23px !important; }
+
+.Location-detail .star-rating {
+  text-align: center;
+  font-size: 30px; }
+
+.Location-detail .rating {
+  color: #a9a9a9;
+  margin: 0;
+  padding: 0; }
+
+.Location-detail ul.rating {
+  display: inline-block; }
+
+.Location-detail .rating li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer; }
+
+.Location-detail .rating .filled {
+  color: #000; }
+
+.Location-detail a.item {
+  color: #444444 !important; }

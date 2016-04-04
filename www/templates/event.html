@@ -1,0 +1,27 @@
+<ion-view view-title="Events" cache-view="false" class="Event">
+<ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+</ion-nav-buttons>
+  <ion-content>
+<div ng-repeat = "item in eventdata">
+<div class="list">
+<div class="item item-divider">
+{{item.Monthhead}}
+  </div>
+<a class="item item-avatar" href="#" ng-click="discount3()">
+     <img src="img/NewCal.png">
+	 <p class="pmonth">{{item.month}}</p>
+	 <p class="pdate">{{item.date}}</p>
+	<ul>
+	<li>
+	<b>{{item.title}}</b>
+	<p> {{item.address}}</p>
+	<p>{{item.time}}</p>
+	</li>
+	<li class=" item-icon-right"><span>{{item.distance}}</span><i class="icon ion-ios-arrow-right"></i></li>
+	</ul>
+  </a>
+  </div>
+</div>
+  </ion-content>
+</ion-view>

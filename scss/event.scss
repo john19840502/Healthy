@@ -1,0 +1,58 @@
+.Event {
+  .item-avatar {
+    min-height: 60px !important;
+    padding-left: 55px !important;
+  }
+
+  ul li {
+    padding: 1px !important;
+    display: inline-block !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px !important;
+  }
+
+  ul >:first-child {
+    width: 80% !important;
+  }
+
+  ul li p,
+  ul li b {
+    font-size: 13px !important;
+    color: black !important;
+  }
+
+  .loyalty span {
+    top: 34px !important;
+  }
+
+  .pmonth {
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    font-size: 11px !important;
+    color: white !important;
+    font-weight: 900;
+  }
+
+  .pdate {
+    position: absolute;
+    left: 20px;
+    top: 32px;
+    font-weight: 700;
+    color: black !important;
+  }
+
+  img {
+    border-radius: 0 !important;
+    left: 8px !important;
+  }
+
+  .item-divider {
+    color: #6d6d71 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    min-height: 45px !important;
+    padding-top: 17px !important;
+  }
+}

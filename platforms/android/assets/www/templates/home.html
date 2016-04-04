@@ -1,0 +1,176 @@
+<ion-view view-title="Home">
+<style>
+.bar {
+    background: #5A2B83 !important;
+}
+.button.button-clear {
+    color: #fff !important;
+}
+.bar.bar-stable .title {
+    color: #fff !important;
+}
+.popup{
+ width: 275px !important;
+}
+.popup-title
+{
+	font-size:20px;
+	font-weight:600;
+}
+
+.popup-sub-title
+{
+	font-size:15px;
+	text-align:left;
+	padding:10px;
+}
+
+.popup-head
+{
+	border:none;
+}
+
+input[type="text"]
+{
+	border: 1px solid #DED5E6 !important;
+	border-radius:5px !important;
+	padding : 5px;
+}
+
+.popup-buttons 
+{
+    flex-direction: row;
+    min-height: 65px;
+    padding: 10px;
+	display:block;
+	margin-left: 33.3333%;
+}
+
+.button-custom
+{
+	background-color : #FFF !important;
+	color:#5a2b83 !important;
+	font-weight: 600;
+}
+
+.button.button-royal 
+{
+    font-weight: 600;
+}
+.popup-container .popup 
+{
+    background-color: #ffffff !important;
+}
+.tabs .tab-item .icon.exploreIcon {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 22px;
+  margin-top: 5px;
+  background-image: url('img/ExploreIcon.png');
+  background-size:contain;
+}
+.tabs .tab-item .icon.favorites {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 22px;
+  margin-top: 5px;
+  background-image: url('img/HeartIcon.png');
+  background-size:contain;
+}
+.tabs .tab-item .icon.deals {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 22px;
+  margin-top: 5px;
+  background-image: url('img/DealsIcon.png');
+  background-size:contain;
+}
+.tabs .tab-item .icon.events {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 22px;
+  margin-top: 5px;
+  background-image: url('img/EventsIcon.png');
+  background-size:contain;
+}
+
+.tabs .tab-item .icon.exploreIcon_fill {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 22px;
+  margin-top: 5px;
+  background-image: url('img/ExploreIcon_fill.png');
+  background-size:contain;
+}
+.tabs .tab-item .icon.favorites_fill {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 22px;
+  margin-top: 5px;
+  background-image: url('img/HeartIcon_fill.png');
+  background-size:contain;
+}
+.tabs .tab-item .icon.deals_fill {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 22px;
+  margin-top: 5px;
+  background-image: url('img/DealsIcon_fill.png');
+  background-size:contain;
+}
+.tabs .tab-item .icon.events_fill {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 22px;
+  margin-top: 5px;
+  background-image: url('img/EventsIcon_fill.png');
+  background-size:contain;
+}
+
+
+
+
+
+.tabs-positive > .tabs,
+.tabs.tabs-positive {
+  border-color: #969696 !important;
+  background-color: #F4F4F4 !important;
+  color: #5A2B83 !important; 
+  }
+.logo{
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 148px;
+    margin: 20% auto 15%;
+    position: relative;
+    width: 196px;
+}
+.button-container .button {
+    margin: 20px auto !important;
+    padding: 0 !important;
+    position: relative !important;
+    width: 60% !important;
+}
+</style>
+
+    <ion-content>
+		<div class="logo">
+			 <img ng-src="img/HP_logo_stacked.png">
+		</div>
+		<div class="button-container">
+		 <button class="button button-block button-royal">
+                    Register with Facebook
+                </button>
+                <button class="button button-block button-royal" ng-click="login()">
+                    Register with Email
+                </button>			
+                <button class="button button-block button-custom" ng-click="loginasguest(user)">
+                    Continue as Guest
+         </button>
+		 </div>
+	<div class="home-advertise-img">
+        <img ng-src="img/icon_picture.png" width="100%" height="148"></div>
+    </ion-content>
+</ion-view>

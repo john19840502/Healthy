@@ -1,0 +1,246 @@
+<ion-view cache-view="false" class="Event-detail">
+<style>
+.bar {
+    background: #5A2B83 !important;
+}
+.button.button-clear {
+    color: #fff !important;
+}
+.bar.bar-stable .title {
+    color: #fff !important;
+}
+.popup{
+ width: 300px !important;
+}
+.popup-title
+{
+	font-size:20px;
+	font-weight:600;
+}
+
+.popup-sub-title
+{
+	font-size:15px;
+	text-align:left;
+	padding:10px;
+}
+
+.popup-head
+{
+	border:none;
+}
+
+input[type="text"]
+{
+	border: 1px solid #DED5E6 !important;
+	border-radius:5px !important;
+	padding : 5px;
+}
+
+.popup-buttons
+{
+    flex-direction: row;
+    min-height: 65px;
+    padding: 10px;
+	display:block;
+	margin-left: 33.3333%;
+}
+
+.button-custom
+{
+	background-color : #FFF !important;
+	color:#5a2b83 !important;
+}
+
+.button.button-royal
+{
+    font-weight: 600;
+}
+
+.button-text
+{
+	width:100%;
+}
+
+.popup-container .popup
+{
+    background-color: #ffffff !important;
+}
+
+
+
+
+.ptitle{
+    font-size: 23px !important;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 0;
+    padding-left: 10px !important;
+    padding-top: 5px !important;
+}
+
+.pstar
+{
+margin:0px;
+padding-left:10px !important;
+padding-bottom:2px !important;
+font-weight:500;
+font-size:15px !important;
+}
+
+.pdescription
+{
+margin:0px;
+padding:10px !important;
+font-weight:400;
+font-size:15px !important;
+color:#444444;
+}
+
+.prestauranttitle
+{
+font-size:20px !important;
+font-weight:700;
+margin:0px;
+display:block;
+padding-top:5px !important;
+padding-left:10px !important;
+}
+
+.item p {
+    color: #000 !important;
+}
+
+.forward-img{
+width : 7px !important;
+height:12px !important;
+ margin-top: 20px;
+}
+
+.forward-first{
+width : 7px !important;
+height:12px !important;
+ position: absolute;
+right: 10px;
+top: 20px;
+}
+
+.addImage
+{
+	height: 20px !important;
+    width: 15px !important;
+}
+
+.listImage
+{
+    height: 20px !important;
+    width: 20px !important;
+}
+
+a.item
+{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+}
+
+.item-icon-right
+{
+	padding-right:30px !important;
+}
+
+.distancespan {
+    color: #444444;
+    font-size: 13px;
+    position: absolute;
+    right: 22px;
+    top: 15px;
+}
+
+.item-divider {
+    overflow: unset !important;
+}
+
+.list
+{
+	margin-bottom :0px !important;
+}
+
+.alignText
+{
+	display:flex;
+	align-items:center;
+	color: #444444 !important;
+}
+
+.item-avatar
+{
+	padding-left:50px !important;
+	min-height: 55px !important;
+}
+.rating{
+font-size :55px;
+}
+.background{
+background-color:#DED5E6;
+}
+.item-heading{
+height:55px !important;
+padding-left : 10px !important;
+}
+.topgraphics img{
+width:100%;
+height:87px;
+}
+</style>
+
+<ion-nav-bar class="bar-stable nav-title-slide-ios7">
+ <ion-nav-back-button ng-init="init()">
+      </ion-nav-back-button>
+    <ion-nav-buttons side="right">
+	<div class="headbtnpadding">
+        <button class="button button-clear button-positive">
+            <img src="img/HeartWhite.png">
+        </button>
+		</div>
+    </ion-nav-buttons>
+</ion-nav-bar>
+  <ion-content has-header="true" has-tabs="true" scroll="true" ng-repeat="item in formdata">
+   <div class="topgraphics">
+	<img ng-src="{{item.imgsrc}}"/>
+  </div>
+   <div>
+   <p class="ptitle">{{item.head}}</p>
+   <p class="pdescription">{{item.discription}}</p>
+   </div>
+
+   <div class="list">
+   <a class="item alignText item-avatar item-icon-left item-icon-right background" href="#">
+    <img src="img/path22.png" class="listImage" />
+    {{item.offers}}
+	<img src="img/DisclosureIndicator.png" class="icon forward-img"/>
+  </a>
+
+  <a class="item alignText item-heading" href="#">
+    <h2 class="prestauranttitle"><b>{{item.title}}</b></h2>
+  </a>
+
+  <a class="item alignText item-avatar item-icon-left item-icon-right" href="#">
+   <img src="img/PinBlack.png" class="addImage" />
+    {{item.address1}}<br/>{{item.address2}}
+    <span class="distancespan">{{item.distance}}</span><img src="img/DisclosureIndicator.png" class="icon forward-img"/>
+  </a>
+
+    <a class="item alignText item-avatar item-icon-left item-icon-right" href="#">
+   <img src="img/Telephone.png" class="listImage" />
+    {{item.phone}}
+  <img src="img/DisclosureIndicator.png" class="icon forward-img"/>
+  </a>
+
+
+  <a class="item alignText item-avatar item-icon-left item-icon-right" href="#">
+   <img src="img/Website.png" class="listImage" />
+    <u>{{item.website}}</u>
+  </a>
+</div>
+  </ion-content>
+</ion-view>

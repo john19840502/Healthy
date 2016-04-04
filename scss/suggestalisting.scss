@@ -1,0 +1,19 @@
+.Suggest-a-listing {
+	input[type="text"] {
+    border: 1px solid #DED5E6 !important;
+    border-radius: 5px !important;
+    padding: 5px;
+    width: 100%;
+	}
+
+	textarea[type="text"] {
+		border: 1px solid #DED5E6 !important;
+		border-radius: 5px !important;
+		padding: 5px;
+		width: 100%;
+	}
+
+	label {
+		color: #444444 !important;
+	}
+}

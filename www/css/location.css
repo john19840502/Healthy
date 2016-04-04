@@ -1,0 +1,13 @@
+.Location .topgraphics img {
+  width: 100%;
+  height: 87px; }
+
+.Location .oval {
+  left: 35px;
+  position: absolute;
+  top: 30px; }
+
+.Location .description {
+  margin-top: 28px;
+  padding: 40px;
+  font-size: 17px; }

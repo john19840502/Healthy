@@ -1,0 +1,60 @@
+<ion-view name="explore" view-title="Explore" ng-init="init()" cache-view="false" class="Explore">
+<ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+</ion-nav-buttons>
+
+<ion-content has-header="true" has-tabs="true" scroll="true" >
+<div class="list listcategory">
+ <a class="item item-icon-right itemcategory" href="#" ng-click="categories()" style="font-size: 14px;">
+    Filter by Category (3)
+    <i class="icon ion-ios-arrow-forward"></i>
+  </a>
+</div>
+<div class="bar-header item-input-inset">
+  <label class="item-input-wrapper">
+    <i class="icon ion-ios-search placeholder-icon"></i>
+    <input type="search" placeholder="Search">
+  </label>
+</div>
+
+<div id="exploremap" data-tap-disabled="true" ng-hide="explorelist"></div>
+<div class="col col-60 col-offset-20 col-center">
+  <div class="button-bar padding">
+  <button class="button button-small btnactive" id="btnmap" ng-click="maplist()" style="font-size: 13px;">Map</button>
+  <button class="button button-small btnNormal"  id="btnlist" ng-click="itemlist()"style="font-size: 13px;">List</button>
+  </div>
+  </div>
+
+
+  <div class="list" ng-show="explorelist">
+
+  	<a class="item item-avatar" ng-repeat="item in explorelistvalue" ng-click="resturantDescription()">
+     <img ng-src="{{item.imgsrc}}">
+	<ul>
+	<li>{{item.name}}
+	<p class="prating">
+		<i class="icon {{star}}"ng-repeat="star in stars track by $index"></i>
+	</p>
+
+	</li>
+	<li class="item-icon-right"><span>{{item.distance}}</span><i class="icon ion-ios-arrow-right"></i></li>
+	</ul>
+  </a>
+</div>
+
+
+<div class="infobox-wrapper">
+    <div id="infobox">
+		  <img style="display: inline-block;vertical-align: top;margin-right:5px;padding-top: 3px;" src="img/PopoutPic.png">
+		  <div class="floating-box" style="display:inline-block;">
+		  <p style="margin:0;line-height:10pt;">Elevation Burger</p>
+		  <p style="margin:0;line-height:10pt;">1.0 miles<b style="float:right;">Open</b></p>
+		  <p style="margin:0;line-height:10pt;">
+			  <i class="icon ion-record" style="color: #5A2B83;"></i>
+			  <i class="icon ion-record" style="color: #D55486;"></i>
+			  <i class="icon ion-record" style="color: #FAA83F;"></i>
+		  </p>
+    </div>
+	</div>
+</ion-content>
+</ion-view>
